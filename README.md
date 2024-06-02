@@ -3,6 +3,10 @@
 
 
 ### Contexto:
+Esto es solo una practica rapida de algunos de los conocimientos que he ido adquiriendo con el paso del timepo. no hay nada estructurado, sencillamente voy aplicando lo que se va necesitando con el fin de recordar y afianzar conocimientos.
+
+---
+
 Una entidad gubernamental que quiere definir sus políticas de financiamiento de producciones cinematográficas nacionales. 
 
 
