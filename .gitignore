@@ -266,3 +266,9 @@ $RECYCLE.BIN/
 
 ### VS CODE ###
 *.code-workspace
+
+
+# para DVC
+*.json
+*.csv
+*.pkl
