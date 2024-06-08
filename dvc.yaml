@@ -1,0 +1,9 @@
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    outs:
+    - data/processed/lista_para_entrenar.csv
+  training:
+    cmd: python src/train.py
+    deps:
+    - data/processed/lista_para_entrenar.csv
