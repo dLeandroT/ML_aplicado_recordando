@@ -1,0 +1,5 @@
+outs:
+- md5: b113d5790f46ff1550e5fd370f5a26b0
+  size: 668419
+  hash: md5
+  path: categoricos.csv

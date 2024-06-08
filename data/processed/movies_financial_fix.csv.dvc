@@ -1,0 +1,5 @@
+outs:
+- md5: 0a4e6534323ec44477c7ed97a581befa
+  size: 930912
+  hash: md5
+  path: movies_financial_fix.csv
