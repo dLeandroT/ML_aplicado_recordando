@@ -9,6 +9,7 @@ import sys
 import numpy as np
 import pandas as pd
 
+from model_utils import update_model
 
 
 # Cargar Datos
@@ -45,4 +46,6 @@ assert train_score > 0.7
 assert test_score > 0.65
 
 
+# actualizar modelo 
+update_model(grid_search.best_estimator_)
 
