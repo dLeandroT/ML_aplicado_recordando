@@ -11,6 +11,7 @@ import pandas as pd
 
 from model_utils import update_model
 from model_utils import save_simple_metrics_report
+from model_utils import get_model_performance_test_set
 
 
 # Cargar Datos
@@ -54,3 +55,8 @@ update_model(grid_search.best_estimator_)
 # Guardar reporte de metricas 
 validation_score = grid_search.best_estimator_.score(X_test, y_test)
 save_simple_metrics_report(train_score, test_score, validation_score, grid_search.best_estimator_)
+
+
+# Graficar
+y_test_pred = grid_search.best_estimator_.predict(X_test)
+get_model_performance_test_set(y_test, y_test_pred)
