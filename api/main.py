@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from .app.models import PredictionResponse 
 from .app.models import PredictionRequest
-from.app.views import get_prediction
+from .app.views import get_prediction
 
 app = FastAPI(docs_url='/')
 

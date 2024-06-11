@@ -9,6 +9,8 @@ from pydantic import BaseModel
 
 def get_model() -> Pipeline:
     model_path = os.environ.get('MODEL_PATH', 'models/model.pkl')
+    print("......")
+    print(model_path)
     with open(model_path, 'rb') as model_file:
         model = load(BytesIO(model_file.read()))
     
