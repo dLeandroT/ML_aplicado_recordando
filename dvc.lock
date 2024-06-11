@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    outs:
+    - path: data/processed/lista_para_entrenar.csv
+      hash: md5
+      md5: d9630dc28f540987583bc60a52a2bd28
+      size: 177436
+  training:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed/lista_para_entrenar.csv
+      hash: md5
+      md5: d9630dc28f540987583bc60a52a2bd28
+      size: 177436
