@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-lates
     
     steps:
-      - names: Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v3
-      - nmae: Creating and activating virtualenv
+      - name: Creating and activating virtualenv
         run: |
           pip install viartualenv
           viartualenv venv
