@@ -1,0 +1,22 @@
+name: Testing API
+on: [push, pull_request]
+jobs: 
+  testing-api:
+    runs-on: ubuntu-lates
+    
+    steps:
+      - names: Checkout repo
+        uses: actions/checkout@v3
+      - nmae: Creating and activating virtualenv
+        run: |
+          pip install viartualenv
+          viartualenv venv
+          source venv/bin/activate
+      - name: Insrall dependencies 
+        run: |
+          pip install dvc-drive
+          pip install -r requirements_test.txt
+      - name: Test API
+        run: |
+          dvc pull model/model.pkl -r model-track
+          pytest test.py 
