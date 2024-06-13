@@ -2,7 +2,7 @@ name: Testing API
 on: [push, pull_request]
 jobs: 
   testing-api:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     env:
       DRIVE_SERVICE_ACCOUNT_KEY: ${{ secrets.DRIVE_SERVICE_ACCOUNT_KEY}}
     steps:
@@ -11,9 +11,9 @@ jobs:
       - name: Creating and activating virtualenv
         run: |
           pip install viartualenv
-          viartualenv venv
+          virtualenv venv
           source venv/bin/activate
-      - name: Insrall dependencies 
+      - name: Install dependencies 
         run: |
           pip install dvc-drive
           pip install -r requirements_test.txt
