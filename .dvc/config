@@ -1,4 +1,8 @@
 ['remote "model-track"']
     url = gdrive://1dOBXQCnyedCUDz5qu_S6HgakyO7zfAOl/model
+    gdrive_use_service_account = true
+    gdrive_user_credentials_file = ../drive_cred.json
 ['remote "data-track"']
     url = gdrive://1dOBXQCnyedCUDz5qu_S6HgakyO7zfAOl/data
+    gdrive_use_service_account = true
+    gdrive_user_credentials_file = ../drive_cred.json
