@@ -6,3 +6,4 @@ scipy==1.13.1
 seaborn==0.13.2
 graphviz==0.20.3
 dvc==3.51.2
+pyOpenSSL==24.1.0
