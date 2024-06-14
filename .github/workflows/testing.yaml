@@ -15,7 +15,7 @@ jobs:
           source venv/bin/activate
       - name: Install dependencies 
         run: |
-          pip install dvc_drive
+          pip install dvc[gdrive]
           pip install -r requirements_test.txt
       - name: Test API
         run: |
