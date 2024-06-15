@@ -1,13 +1,12 @@
 ['remote "model-track"']
     url = gdrive://1dOBXQCnyedCUDz5qu_S6HgakyO7zfAOl/model
     gdrive_use_service_account = true
-    gdrive_user_credentials_file = ../drive_cred.json
-    gdrive_service_account_json_file_path = ../drive_cred.json
-    gdrive_service_account_user_email = 'code@leandrot.com'
-
+    gdrive_acknowledge_abuse = true
+    gdrive_user_credentials_file = ../client_secret_id.json
+    gdrive_service_account_json_file_path = ../ml-recordando-service.json
 ['remote "data-track"']
     url = gdrive://1dOBXQCnyedCUDz5qu_S6HgakyO7zfAOl/data
     gdrive_use_service_account = true
-    gdrive_user_credentials_file = ../drive_cred.json
-    gdrive_service_account_json_file_path = ../drive_cred.json
-    gdrive_service_account_user_email = 'code@leandrot.com'
+    gdrive_acknowledge_abuse = true
+    gdrive_user_credentials_file = ../client_secret_id.json
+    gdrive_service_account_json_file_path = ../ml-recordando-service.json
